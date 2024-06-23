@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>PassWord Generator</title>
+</head>
+<body>
+    <div class="container">
+        <h2>PassWord Generator</h2>
+        <div class="wrapper">
+            <div class="input-box">
+                <input type="text" name="" id="password" disabled>
+                <span id="copy" onclick="copyPassword()">Copy</span>
+            </div>
+            <div class="password-settings">
+                <label for="" class="title">Password Settings</label>
+                <ul class="options">
+                    <li class="options">
+                        <input type="checkbox" name="" id="uppercase">
+                        <label for="uppercase">Uppercase(A-Z)</label>
+                    </li>
+
+                    <li class="options">
+                        <input type="checkbox" name="" id="numbers">
+                        <label for="numbers">Numbers(0-9)</label>
+                    </li>
+
+                    <li class="options">
+                        <input type="checkbox" name="" id="symbols">
+                        <label for="symbols">Symbols</label>
+                    </li>
+                    <li>LowerCase is Default</li>
+                    <!-- <li class="options">
+                        <input type="checkbox" name="" id="exc-duplicate">
+                        <label for="exc-duplicate">Exclude Duplicate</label>
+                    </li>
+
+                    <li class="options">
+                        <input type="checkbox" name="" id="spaces">
+                        <label for="spaces">Spaces</label>
+                    </li> -->
+                </ul>
+            </div>
+            <button class="generate-btn" id="generate" onclick="generatepassword()">Generate PassWord</button>
+            <button class="generate-btn" type="reset" id="Reset">Reset</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
